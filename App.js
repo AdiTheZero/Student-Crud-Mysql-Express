@@ -2,6 +2,7 @@ const express = require("express");
 
 const app = express();
 
+let PORT = 10000;
 const  mysql = require("./connection").con
 // app.use(express.urlencoded())
 // app.use(express.json())
@@ -181,4 +182,4 @@ app.get("/view", (req, res) => {
 
 
 
-app.listen(5000);// create server
+app.listen(PORT,"0.0.0.0");// create server
